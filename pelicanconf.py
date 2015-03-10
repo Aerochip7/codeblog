@@ -31,5 +31,10 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 10
 
+FILES_TO_COPY = (
+    ('extra/CNAME', 'CNAME'),
+)
+
+THEME = 'pelican-themes/basic'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
