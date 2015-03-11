@@ -8,7 +8,7 @@ SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = u'en'
 
@@ -31,10 +31,13 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 10
 
-FILES_TO_COPY = (
-    ('extra/CNAME', 'CNAME'),
-)
+#FILES_TO_COPY = (
+ #   ('extra/CNAME', 'CNAME'),
+#)
 
-THEME = 'pelican-themes/basic'
+STATIC_PATHS = ['extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME':{'path':'CNAME'}}
+
+THEME = 'pelican-themes/water-iris'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
